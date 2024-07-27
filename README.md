@@ -3,6 +3,50 @@
 
 
 
+<br><br>
+<br><br>
+___________________________________________
+___________________________________________
+<br><br>
+<br><br>
+
+# Client
+
+## Linux
+- https://min.io/docs/minio/linux/reference/minio-mc.html
+- Check architecture `uname -m`
+  - x86_64 means intel
+
+### x86_64
+```shell
+# ==== INSTALL =====
+curl https://dl.min.io/client/mc/release/linux-amd64/mc \
+  --create-dirs \
+  -o $HOME/minio-binaries/mc
+
+chmod +x $HOME/minio-binaries/mc
+export PATH=$PATH:$HOME/minio-binaries/
+
+# mc --help
+
+# ==== SET ALIAS =====
+bash +o history
+mc alias set ALIAS HOSTNAME ACCESS_KEY SECRET_KEY
+bash -o history
+
+# ==== TEST CONNECTION =====
+mc admin info myminio
+```
+
+
+
+
+
+
+
+
+
+
 
 
 
