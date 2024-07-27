@@ -11,6 +11,7 @@ ___________________________________________
 <br><br>
 
 # Client
+- https://min.io/docs/minio/linux/reference/minio-mc.html#
 
 ## Linux
 - https://min.io/docs/minio/linux/reference/minio-mc.html
@@ -271,4 +272,57 @@ mc alias set minio http://192.168.49.2.nip.io:30000 test69696969 test69696969
 
 # ==== TEST CONNECTION =====
 mc admin info minio
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+<br><br>
+___________________________________________
+___________________________________________
+<br><br>
+<br><br>
+
+
+# Alias
+
+<br><br>
+
+## Set alias
+```
+# On zsh shell just run the command
+bash +o history
+mc alias set ALIAS HOSTNAME ACCESS_KEY SECRET_KEY
+bash -o history
 ```
