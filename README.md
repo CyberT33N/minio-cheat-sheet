@@ -252,3 +252,23 @@ bash ./minio/setup.sh
 - For most cases you can just re-run it and it will detect if there are any changes. But in other cases like e.g. where we want to change credentials you have to delete the pod. However, for local environemnts you can just run the reinstall script above. This will be the easieast way when yua re doing some changes
 
 
+
+
+
+
+<br><br>
+<br><br>
+
+### MinIO Client
+
+<br><br>
+
+#### Set alias
+- Install MinIO Client before
+  - https://github.com/CyberT33N/minio-cheat-sheet/blob/main/README.md#client
+```shell
+mc alias set minio http://192.168.49.2.nip.io:30000 test69696969 test69696969
+
+# ==== TEST CONNECTION =====
+mc admin info minio
+```
