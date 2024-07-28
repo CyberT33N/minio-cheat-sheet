@@ -82,7 +82,7 @@ data:
 apiVersion: v1
 kind: Secret
 metadata:
-  name: minio-secret
+  name: minio-dev
   namespace: dev
 type: Opaque
 data:
