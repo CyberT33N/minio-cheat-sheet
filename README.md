@@ -80,6 +80,16 @@ data:
   MINIO_ROOT_PASSWORD: dGVzdDY5Njk2OTY5 # Base64-kodierter Wert für "test69696969"
 ---
 apiVersion: v1
+kind: Secret
+metadata:
+  name: minio-secret
+  namespace: dev
+type: Opaque
+data:
+  MINIO_ROOT_USER: dGVzdDY5Njk2OTY5  # Base64-kodierter Wert für "test69696969"
+  MINIO_ROOT_PASSWORD: dGVzdDY5Njk2OTY5 # Base64-kodierter Wert für "test69696969"
+---
+apiVersion: v1
 kind: PersistentVolume
 metadata:
   name: minio-pv
