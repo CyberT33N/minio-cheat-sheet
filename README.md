@@ -257,6 +257,37 @@ bash ./minio/setup.sh
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+________________________________________________________
+________________________________________________________
 <br><br>
 <br><br>
 
@@ -274,6 +305,14 @@ mc alias set minio http://192.168.49.2.nip.io:30000 test69696969 test69696969
 mc admin info minio
 ```
 
+
+
+<br><br>
+
+#### Create bucket
+```shell
+mc mb yourAlias/runner-cache 
+```
 
 
 
